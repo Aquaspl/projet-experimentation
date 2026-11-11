@@ -4,6 +4,11 @@
 TagManager:
   serializedVersion: 3
   tags:
+  - Projectile
+  - Target
+  - Anchor
+  - PlayerHand
+  - Destroyer
   - QDSUISection
   - QDSUIAccentColor
   - QDSUISecondaryButton
@@ -38,8 +43,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Player
+  - Mirror
   - 
   - 
   - 
