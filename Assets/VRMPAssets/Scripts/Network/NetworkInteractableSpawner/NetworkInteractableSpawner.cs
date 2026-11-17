@@ -129,6 +129,7 @@ namespace UnityEngine.XR.Templates.VRMultiplayer
         void SpawnInteractablePrefab(Transform spawnerTransform)
         {
             m_SpawnCooldownTimer = spawnCooldown;
+
             NetworkBaseInteractable spawnedInteractable = Instantiate
             (
                 spawnInteractablePrefab,
@@ -136,12 +137,14 @@ namespace UnityEngine.XR.Templates.VRMultiplayer
                 spawnerTransform.rotation
             );
 
+            // Apply scale BEFORE networking spawn
+            spawnedInteractable.transform.localScale = spawnerTransform.localScale;
+
             // Can only freeze physics interactables
             if (freezeOnSpawn && spawnedInteractable is NetworkPhysicsInteractable interactable)
                 interactable.spawnLocked = true;
 
             spawnedInteractable.NetworkObject.Spawn();
-            spawnedInteractable.transform.localScale = spawnerTransform.localScale;
 
             m_CurrentInteractableReference.Value = spawnedInteractable.NetworkObject;
         }
