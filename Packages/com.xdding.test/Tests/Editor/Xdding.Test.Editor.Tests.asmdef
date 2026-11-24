@@ -1,0 +1,14 @@
+{
+    "name": "Xdding.Test.Editor.Tests",
+    "references": [
+        "Xdding.Test.Editor",
+        "Xdding.Test"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": []
+}

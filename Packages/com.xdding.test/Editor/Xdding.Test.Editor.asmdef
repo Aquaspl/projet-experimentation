@@ -1,0 +1,10 @@
+{
+    "name": "Xdding.Test.Editor",
+    "references": [
+      "Xdding.Test"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": []
+}

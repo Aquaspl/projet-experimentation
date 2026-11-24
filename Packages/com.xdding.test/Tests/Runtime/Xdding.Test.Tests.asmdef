@@ -1,0 +1,11 @@
+{
+    "name": "Xdding.Test.Tests",
+    "references": [
+        "Xdding.Test"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": []
+}

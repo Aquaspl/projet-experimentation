@@ -592,6 +592,14 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.xdding.test": {
+      "version": "file:com.xdding.test",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.unity.test-framework": "1.6.0"
+      }
+    },
     "com.unity.modules.accessibility": {
       "version": "1.0.0",
       "depth": 0,
